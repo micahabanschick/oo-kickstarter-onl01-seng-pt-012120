@@ -16,6 +16,11 @@ class Backer
   end 
   
   def back_project(project)
+    @backed_projects << Project.all.find{|proj| proj == project}
+  end 
+  
+  def self.all 
+    @@all 
   end 
   
 end 
