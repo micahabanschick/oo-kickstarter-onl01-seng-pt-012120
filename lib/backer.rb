@@ -17,6 +17,7 @@ class Backer
   
   def back_project(project)
     @backed_projects << Project.all.find{|proj| proj == project}
+    Project.backers << self
   end 
   
   def self.all 
