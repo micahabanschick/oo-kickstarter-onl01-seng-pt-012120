@@ -15,6 +15,8 @@ class Project
     @@all << self 
   end 
   
+  def add_backer(backer)
+  
   def self.all 
     @@all 
   end 
